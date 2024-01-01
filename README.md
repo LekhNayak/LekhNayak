@@ -1,5 +1,4 @@
 - 👋 Hi, I’m @LekhNayak
-- 👀 I’m interested in ...
 - 🌱 I’m currently learning **Full Stack Web Development** and **DSA**
 - 📫 How to reach me **Gmail** :- lekhnayak03@gmail.com
                      **Linkden** :- Lekh Nayak
