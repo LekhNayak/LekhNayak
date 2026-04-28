@@ -1,128 +1,92 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,100:a259ff&height=200&section=header&text=Lekh&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=building%20things%20that%20think&descAlignY=60&descSize=22&descColor=d4b8ff" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d0d0d,50:1a0533,100:2d0a66&height=220&section=header&text=Lekh%20Nayak&fontSize=72&fontColor=c9b1ff&animation=fadeIn&fontAlignY=45&desc=ml%20%C2%B7%20systems%20%C2%B7%20agentic%20ai&descSize=18&descColor=7c5cbf&descAlignY=65" width="100%"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=C9B1FF&center=true&vCenter=true&width=650&lines=building+systems+that+think+and+scale;CSE+%40+SPIT+Mumbai+%7C+Business+Analytics+%40+IIT+Patna;agentic+pipelines%2C+ML+research%2C+distributed+systems;always+shipping.)](https://git.io/typing-svg)
+
+</div>
+
+---
+
+```
+lekh@github:~$ whoami
+
+  > third-year CSE @ SPIT Mumbai  ·  CGPA 8.05
+  > Minor in Business Analytics @ IIT Patna  ·  CGPA 9.5
+  > Head of Events, CSI SPIT  ·  50+ member team
+  > building at the intersection of ML research + real engineering
+```
+
+---
+
+### stack
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=c9b1ff)
+![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=c9b1ff)
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=c9b1ff)
+![SQL](https://img.shields.io/badge/SQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=c9b1ff)
+
+![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=c9b1ff)
+![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=node.js&logoColor=c9b1ff)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=c9b1ff)
+![Flask](https://img.shields.io/badge/Flask-0d1117?style=for-the-badge&logo=flask&logoColor=c9b1ff)
+
+![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=for-the-badge&logo=pytorch&logoColor=c9b1ff)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-0d1117?style=for-the-badge&logo=scikit-learn&logoColor=c9b1ff)
+![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=for-the-badge&logo=langchain&logoColor=c9b1ff)
+
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=c9b1ff)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=c9b1ff)
+![Redis](https://img.shields.io/badge/Redis-0d1117?style=for-the-badge&logo=redis&logoColor=c9b1ff)
+![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=c9b1ff)
+
+</div>
+
+---
+
+### stats
+
+<div align="center">
+
+<img height="175em" src="https://github-readme-stats.vercel.app/api?username=LekhNayak&show_icons=true&theme=midnight-purple&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d0d0d&title_color=c9b1ff&icon_color=7c5cbf&text_color=a89dc0"/>
+<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LekhNayak&layout=compact&theme=midnight-purple&hide_border=true&langs_count=8&bg_color=0d0d0d&title_color=c9b1ff&text_color=a89dc0"/>
 
 </div>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=A259FF&center=true&vCenter=true&width=600&lines=ML+%7C+Full-Stack+%7C+Agentic+AI;CSE+%40+SPIT+Mumbai;Minor+in+Business+Analytics+%40+IIT+Patna;Always+building%2C+always+shipping.)](https://git.io/typing-svg)
+[![GitHub Streak](https://streak-stats.demolab.com?user=LekhNayak&theme=midnight-purple&hide_border=true&background=0d0d0d&stroke=2d0a66&ring=c9b1ff&fire=a259ff&currStreakLabel=c9b1ff)](https://git.io/streak-stats)
 
 </div>
 
 ---
 
-### 🧠 what i'm about
-
-I build systems that sit at the intersection of **ML research**, **agentic AI**, and **real-world engineering** — pipelines that actually run in production, not just in notebooks.
-
-Currently: T.E. CSE @ [SPIT, Mumbai](https://www.spit.ac.in/) · Minor in Business Analytics @ IIT Patna
-
----
-
-### 🛠️ stack
+### activity
 
 <div align="center">
 
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
-**ML / AI**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-
-**Backend / Infra**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=LekhNayak&theme=tokyo-night&bg_color=0d0d0d&color=c9b1ff&line=7c5cbf&point=a259ff&hide_border=true)](https://github.com/Ashutosh00710/github-readme-activity-graph)
 
 </div>
 
 ---
 
-### 🚀 featured projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**🏗️ Agentic RFP Automation**
-> Multi-agent AI platform for automating RFP responses end-to-end. Built with LangGraph + CrewAI orchestration, FastAPI backend, and FAISS vector retrieval.
-
-`LangGraph` `CrewAI` `FastAPI` `FAISS`
-
-</td>
-<td width="50%" valign="top">
-
-**📍 Visual Venue Validator**
-> Street-level imagery pipeline (Google Street View → Mapillary → KartaView) with YOLOv8 object detection + OCR to determine if fuel stations and restaurants are operational.
-
-`YOLOv8` `OCR` `PostGIS` `Flask`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**🔬 Quantum-Classical HSI Classification**
-> Hyperspectral image classification on PaviaU dataset combining a spatial-spectral CNN (~99.5% OA) with a QAOA-based quantum band selection module on IBM Quantum hardware.
-
-`PyTorch` `Qiskit` `IBM Quantum` `CNN`
-
-</td>
-<td width="50%" valign="top">
-
-**🧩 EigenLens**
-> PCA-based image compression web app that lets you explore the tradeoff between compression ratio and visual quality interactively.
-
-`FastAPI` `React` `PCA` `NumPy`
-
-</td>
-</tr>
-</table>
-
----
-
-### 📊 github stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=midnight-purple&hide_border=true&count_private=true&include_all_commits=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=midnight-purple&hide_border=true&langs_count=8"/>
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=midnight-purple&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
----
-
-### 🐍 contribution graph
+### contributions
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LekhNayak/LekhNayak/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LekhNayak/LekhNayak/output/github-contribution-grid-snake.svg">
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/LekhNayak/LekhNayak/output/github-contribution-grid-snake-dark.svg">
 </picture>
 
 </div>
@@ -131,9 +95,14 @@ Currently: T.E. CSE @ [SPIT, Mumbai](https://www.spit.ac.in/) · Minor in Busine
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![Mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=c9b1ff)](https://www.linkedin.com/in/lekh-nayak-9428aa280/)
+[![Email](https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=c9b1ff)](mailto:lekh.nayak23@spit.ac.in)
+[![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=c9b1ff)](https://github.com/LekhNayak)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:a259ff,100:6e40c9&height=100&section=footer" width="100%"/>
+<br/>
+
+![visitors](https://komarev.com/ghpvc/?username=LekhNayak&color=7c5cbf&style=flat&label=profile+views)
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d0a66,100:0d0d0d&height=100&section=footer" width="100%"/>
