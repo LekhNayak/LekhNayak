@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=C9B1FF&center=true&vCenter=true&width=650&lines=building+systems+that+think+and+scale;CSE+%40+SPIT+Mumbai+%7C+Business+Analytics+%40+IIT+Patna;agentic+pipelines%2C+ML+research%2C+distributed+systems;always+shipping.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=C9B1FF&center=true&vCenter=true&width=650&lines=ML+%C2%B7+backend+%C2%B7+agentic+AI;CSE+%40+SPIT+Mumbai+%7C+Business+Analytics+%40+IIT+Patna;training+models%2C+building+backends%2C+shipping+agents;always+building.)](https://git.io/typing-svg)
 
 </div>
 
@@ -20,7 +20,11 @@ lekh@github:~$ whoami
   > third-year CSE @ SPIT Mumbai  ·  CGPA 8.05
   > Minor in Business Analytics @ IIT Patna  ·  CGPA 9.5
   > Head of Events, CSI SPIT  ·  50+ member team
-  > building at the intersection of ML research + real engineering
+
+  > mostly doing ML — models, pipelines, the works
+  > backend dev when something needs to actually run
+  > dabbling in agentic AI — multi-agent systems, LLM workflows
+  > if it trains or serves, i've probably broken it once
 ```
 
 ---
