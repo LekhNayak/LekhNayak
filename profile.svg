@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="580px" font-size="16px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+.key {fill: #ffa657;}
+.value {fill: #a5d6ff;}
+.addColor {fill: #3fb950;}
+.delColor {fill: #f85149;}
+.cc {fill: #616e7f;}
+.prompt {fill: #2AA9E0;}
+.sep {fill: #7d8590;}
+.out {fill: #8b949e;}
+text, tspan {white-space: pre;}
+@media (prefers-reduced-motion: no-preference) {
+.t {opacity: 0; animation: tline .25s ease forwards;}
+.t.cursor {animation: tline .25s ease forwards, blink 1.1s steps(1) infinite;}
+@keyframes tline {from {opacity: 0;} to {opacity: 1;}}
+@keyframes blink {0%, 49% {opacity: 1;} 50%, 100% {opacity: 0;}}
+}
+</style>
+<rect width="985px" height="580px" fill="#161b22" rx="15"/>
+
+<!-- terminal title bar -->
+<rect x="0" y="0" width="985" height="34" fill="#0d1117" rx="15"/>
+<rect x="0" y="20" width="985" height="14" fill="#0d1117"/>
+<circle cx="20" cy="17" r="6" fill="#ff5f56"/>
+<circle cx="42" cy="17" r="6" fill="#ffbd2e"/>
+<circle cx="64" cy="17" r="6" fill="#27c93f"/>
+<text x="492" y="22" fill="#7d8590" font-size="13px" text-anchor="middle" class="t" style="animation-delay:0.05s">lekh@github: ~</text>
+
+<!-- top terminal commands -->
+<text x="15" y="64"><tspan x="15" y="64" class="prompt t" style="animation-delay:0.25s">lekh@github</tspan><tspan class="sep t" style="animation-delay:0.25s">:</tspan><tspan class="value t" style="animation-delay:0.25s">~</tspan><tspan class="sep t" style="animation-delay:0.25s">$ </tspan><tspan class="t" fill="#86efac" style="animation-delay:0.25s">whoami</tspan></text>
+<text x="15" y="86" class="out t" style="animation-delay:0.45s">Lekh Nayak - Full Stack Web Dev | DSA | Machine Learning</text>
+<text x="15" y="118"><tspan x="15" y="118" class="prompt t" style="animation-delay:0.65s">lekh@github</tspan><tspan class="sep t" style="animation-delay:0.65s">:</tspan><tspan class="value t" style="animation-delay:0.65s">~</tspan><tspan class="sep t" style="animation-delay:0.65s">$ </tspan><tspan class="t" fill="#86efac" style="animation-delay:0.65s">fastfetch</tspan></text>
+
+<!-- photo -->
+
+<text x="29.96" y="165.0" fill="#c9d1d9" font-size="4.3px" stroke="#c9d1d9" stroke-width="0.5">
+<tspan x="29.96" y="165.0" class="t" style="animation-delay:0.9s">                                            .,,::,,,,,..,.......                                                              </tspan>
+<tspan x="29.96" y="169.7" class="t" style="animation-delay:0.93s">                                        .:::;;;ooo;oooooooo;::::,,..,,.                                                       </tspan>
+<tspan x="29.96" y="174.4" class="t" style="animation-delay:0.97s">                                    .,;;;;;:;;;;;;;oxoooo;;;;;;:::..,;,.                                                      </tspan>
+<tspan x="29.96" y="179.1" class="t" style="animation-delay:1.0s">                            ..,:;oooxxooo;;;;:::;ooooooo;;o;;;;;:;:,..:,..                                                    </tspan>
+<tspan x="29.96" y="183.8" class="t" style="animation-delay:1.03s">                         .:oxxxxoooooxxxx%xooooooxooooooooxoooo;;;;::::,,,,...                                                </tspan>
+<tspan x="29.96" y="188.5" class="t" style="animation-delay:1.07s">                      ,,oxx%xo;;:;;oxxx%%xxxxxxxooo;;;;:::;;;:;;;::;;:::::,,,:.                                               </tspan>
+<tspan x="29.96" y="193.1" class="t" style="animation-delay:1.1s">                    ,o%%%xxo;;;;;ooxxoxxooooooo;oo;;;:,:,,,,,,,:,,,,::::::::::,.                                              </tspan>
+<tspan x="29.96" y="197.8" class="t" style="animation-delay:1.13s">                  ,o%%%%xxo;:::,,;oxo;;::;::::::;;;;;;;;::,,,,..,,,,,,,::,,:::::,,.                                           </tspan>
+<tspan x="29.96" y="202.5" class="t" style="animation-delay:1.17s">               .:;x%%%%xooo:::,,:;ooxxo;;;;;;;;;;;oxxo;::,,,.,,,.,,....,,,,,,,,,,::,,,                                        </tspan>
+<tspan x="29.96" y="207.2" class="t" style="animation-delay:1.2s">            ,oxx%%%%%%xxo;;;:::::;oooxxxoo;oxxo;oxoo::,,,,,,,,,::::::::,,,,..,,..,,:;o;;:,,                                   </tspan>
+<tspan x="29.96" y="211.9" class="t" style="animation-delay:1.23s">         .;%%#%%%%%%%%%%o;;;::,:;;o%xoxxxxoooooxxo;:,,,...,,:::;;;;;oooo;;;::,,,.,,,:;;xxxxo;,.                               </tspan>
+<tspan x="29.96" y="216.6" class="t" style="animation-delay:1.27s">        ;x%%%%xx%%%%%%xo;;;::::,:;;o%%%xoooo;;:::,.... ..,::;;;ooooooooooxooo;;,.,::,:;,:oxx%%o:.                             </tspan>
+<tspan x="29.96" y="221.3" class="t" style="animation-delay:1.3s">      .o%x%##%x%xx%x%xx;;;;,,,,,::;x%xxxoo;;:,.   . ...:;;;;;ooooooxxoxxxxxxxxoo;:,,::oo::;x%%%xx;                            </tspan>
+<tspan x="29.96" y="226.0" class="t" style="animation-delay:1.33s">     .o%%#%x%xxxxxx%xxo;;:,.     ..:;;;;::,,,,,:,,::;;;oxxxxx%xxx%%%%%%%%%xxxxxxxo:..,oxox;o%%##%%o,.                         </tspan>
+<tspan x="29.96" y="230.7" class="t" style="animation-delay:1.37s">     ;%%%xxxooxxxx%xo;:;;,.  .,,..........,:;;;::;;xxx%%%%%%#######%##%%%%%%xxxxxxo;,.;oox%;o%%%%xxo;,                        </tspan>
+<tspan x="29.96" y="235.4" class="t" style="animation-delay:1.4s">    :%%xxoo;;;;ooxxoxo;o,,.,.,:,.,::;:::;;;;;:;;oxxx%###########%###%%%%%%%%%%%%%%xx;.;;;x%xoxxxxooo;;:,                      </tspan>
+<tspan x="29.96" y="240.1" class="t" style="animation-delay:1.43s">   ,%%xxo;::::;;;oxxxoxo:;;;;oo:,::;;;;;oxoooxx%%%%############%#%%##%%%%%%%%%%%%%xxx::o;o%xo;ooooox;:;;:.                    </tspan>
+<tspan x="29.96" y="244.7" class="t" style="animation-delay:1.47s">   o%xo;;::::::;ooxxxxx%xoo;oo;::;::;oxxxxxxx%%%%%#################%%%%%%%%%%%%%%%%xxo;oo:;o;,,;:;;;;;::::.                   </tspan>
+<tspan x="29.96" y="249.4" class="t" style="animation-delay:1.5s">  ,xxo;;;:::,:;;ooox%xoxxoo;;:::;::ox%xxox%x%%%%###################%%%%%%%%%%%%%%%%xxo;;::.::,.,;::::;;::::.                  </tspan>
+<tspan x="29.96" y="254.1" class="t" style="animation-delay:1.53s">  ;xo;;;;::,,:::;;:ooxoo:,,::::;:;oxxoox%%%%%########################%%%%%%%%%%%%%%xxoo:,,..,,,.,:,:::,:::,:,                 </tspan>
+<tspan x="29.96" y="258.8" class="t" style="animation-delay:1.57s"> .ooo;;;:::,::,,::::;;:;:,,,:;o;;oooo%%%%%###########################%%%%%%%%%%%%xxxxx;::,. ,....,,,:,,::::::,                </tspan>
+<tspan x="29.96" y="263.5" class="t" style="animation-delay:1.6s"> :oo;;;:::.:;,,:;::,;::::,,,,,:;oox%%%%##############################%##%%%%%%%xxxxxxoo;:,. .,,...,.,,,:::::::.               </tspan>
+<tspan x="29.96" y="268.2" class="t" style="animation-delay:1.63s"> ;xo;;:::,:;,,:;;:,,,;,:x;;;:;xx%%%%%############################%%#%######%%%%xxxxxxo;;;,, .,,...,,,,::::;:::,               </tspan>
+<tspan x="29.96" y="272.9" class="t" style="animation-delay:1.67s">.oxo;;::,,;:,,,:::.,.,,;o;ooo%%%%%########################%%%%%%%%%%%%%%%%%%%%%%%%xxxo:::,, .,,,,,,,,,,:::;::::,              </tspan>
+<tspan x="29.96" y="277.6" class="t" style="animation-delay:1.7s">:xoxo;::,:,,,,:,,.,,,,::;oooxx%%######%%%%%%%%%%%%###%%%%%%xxxxxxxoooo;o;oooxxoxxxxxxo:,,.,..,,,,,,:::,,:::::::,              </tspan>
+<tspan x="29.96" y="282.3" class="t" style="animation-delay:1.73s">;xoooo::,:,,,,,.,,.,.,:::ooooxx%%%%%%%%%x%%%xxxxx%%%%%xxxxxxo;;;:::,,,,,:,,,:;;;oox%xx;,..,,.,::::,::::,::,,:::,              </tspan>
+<tspan x="29.96" y="287.0" class="t" style="animation-delay:1.77s">;xoooo:;::,,,,,,,.,,.,;;;ooo;;:;ooooo;;;o;;;;;ooxxxxxxxxxoo:,... ...,;x;::::,::::::;ooo:,..,.,::,::,:::,,,,,,::,              </tspan>
+<tspan x="29.96" y="291.7" class="t" style="animation-delay:1.8s">;xoooo;:::,,,.,:,,,..,;oooo;,,::::::::::,. ....,:;ooooo;;:,,.. .,,::;ooo;oooooooo;;:.,,,,,,,.,:::::::,,,,,,,:;:               </tspan>
+<tspan x="29.96" y="296.3" class="t" style="animation-delay:1.83s">;xoooo;::,,,:.;o,:...:ooxo;:::::::::::ox;:::,,,,,::,:;:,,:,..,;;ooo;;;;;oooxxxxxxxxxo,...,:,.,::,::::,,,:,.,::.               </tspan>
+<tspan x="29.96" y="301.0" class="t" style="animation-delay:1.87s">:xoooo;::,.,:.o%:,..,:;;;:;;ooxxxxxooooooo;;;::,,:,:.,.  . ,oooooo;:::,::;;ooxxxxxxxx;,.:::,,,,::,,,:,,,,..,,                 </tspan>
+<tspan x="29.96" y="305.7" class="t" style="animation-delay:1.9s">.xx;;o;:;,,,,,,xo::,,,,,oxxxxxxxxxxxoooo;;oooo;:..:::;;;, .;;;ooo;:,,:,,,:;;;oooxxxxxo,:x,,,,,,::,,...,,..,,                  </tspan>
+<tspan x="29.96" y="310.4" class="t" style="animation-delay:1.93s"> ;xo;oo;;:,,.,,:ox;:;,:xxxx%%%xxooooo;;;:::;oo;;: ,ooooo; ,;;;;;:::;;,,,:,oo::;;ooxx%x,;%: ..,,,,,,,.,,,,,,.                  </tspan>
+<tspan x="29.96" y="315.1" class="t" style="animation-delay:1.97s"> .x%oooo;:,,.,, .xxox,;xxx%%%xxoo;;:::::;;;::;;;; .,:;;:,..;o;:::::::,,:::;;;;;;oox%%x.o%;.. .,.....,,,,,:,                   </tspan>
+<tspan x="29.96" y="319.8" class="t" style="animation-delay:2.0s">  ,%%oo;;;::,,,. x;,;.oxxx%%xxoo;oo:;;::;;;:;;;o; ,x####%: :xxo;;;:;;;;;;;;;;ooxx%%%#x.x%x:.  ..  .....,::                    </tspan>
+<tspan x="29.96" y="324.5" class="t" style="animation-delay:2.03s">   :%x;;;;:;;,,,.:. :,oxx%%%xxooooooo;;;;;;;;;ox: x######%,.x%%%xxoo;;;;;ooox%#######;:#%%;,,...  ..,,,,:.                    </tspan>
+<tspan x="29.96" y="329.2" class="t" style="animation-delay:2.07s">    :%o;;;;:;;:,,.. ,::x%%xxxxxxoooooooooooox%%x.;######%#x,:%%######%%#############%,%#%%x:,::::,,,:,,,.                     </tspan>
+<tspan x="29.96" y="333.9" class="t" style="animation-delay:2.1s">     :xo;;;;:;:,,.   ;:x%%%%%%%%xxxxxxxx%%##%xx:,%%########x,;%%%%##################:o###%x::;ooo;::;;,.                      </tspan>
+<tspan x="29.96" y="338.6" class="t" style="animation-delay:2.13s">      :xo;:;;::,.... oo:#%#################%x%;.%#%#########%:,x%%%%%%%%%%%%%%%###%;x####%%;:::;;o;:;o,                       </tspan>
+<tspan x="29.96" y="343.3" class="t" style="animation-delay:2.17s">       ,xxo;;::,.....o#:o##############%%%%%%;:%#%%###########x;xxx%%%%%%%%%%%%%xoo%######%o:;oxx%x;x;                        </tspan>
+<tspan x="29.96" y="347.9" class="t" style="animation-delay:2.2s">        .o%x;::,,,...x#%:x########%%%%%%%%xo;o##################%x:;;ooxxxx%%%xx%%########%o::;xxxxoo.                        </tspan>
+<tspan x="29.96" y="352.6" class="t" style="animation-delay:2.23s">          o#o;:::,:,,x###oox%###%%%%%%xxo;:;%##%#%%%%%%%%%%%######%;oooooxxxxx%%%%%%%%####%o:::;;;xo:                         </tspan>
+<tspan x="29.96" y="357.3" class="t" style="animation-delay:2.27s">           xoo;;oo;::x#####%o%%xxxooooo;;;;%%%%xxxxxxx%%%%xoooooxxo;oooooooxxxxxx%%%%%%%%%xo:,,,,;xo,                         </tspan>
+<tspan x="29.96" y="362.0" class="t" style="animation-delay:2.3s">           oox;;ooo;:x#####%%%%xxxxxxxooooo;oo;::::;ox%%%x;:,,,,,::;ooo;;;ooxxxxxx%%%%%%%%xo:::,;%o;.                         </tspan>
+<tspan x="29.96" y="366.7" class="t" style="animation-delay:2.33s">           oxx;oooo::o%%%#%xxxxxxxxxo;;;;oo:,,,,,,,,:;ooo:,,....,,,::;;;;:;;ooxxx%%%%%xxxxo;:oxoxoo,                          </tspan>
+<tspan x="29.96" y="371.4" class="t" style="animation-delay:2.37s">           :%x;ooo;::o%%%%xxxxxx%xxo;;;;;;:,,..      .,,,      ,,,,,,,,.,,,,:;oxxx%%xxxxxo;::oxxoo;                           </tspan>
+<tspan x="29.96" y="376.1" class="t" style="animation-delay:2.4s">            o%ox;;:::;x%%xxxxxxxxxo:::,,.,:;::,,......,,,,,..,:;;;ooo::... ..,;xxx%%xxooo;;,:ox%%o.                           </tspan>
+<tspan x="29.96" y="380.8" class="t" style="animation-delay:2.43s">            .xxoo:,:;;;xxxxxxxxxx;,...  ,;o;;;:;:;;;o;;;;o;;o;oooooxooo;;;,..,:oxxxxxoo;;;:,:%%%x,                            </tspan>
+<tspan x="29.96" y="385.5" class="t" style="animation-delay:2.47s">             .xoo;:;;:;ooooxxxxxo....,,:ooooooooxxxxxxxxxxxxxxxxxxxo;:,,,:,...:oxxxoooo;;::,,;;:.                             </tspan>
+<tspan x="29.96" y="390.2" class="t" style="animation-delay:2.5s">              :x;oxo;::;;;;oxxxx;.,.,;o;;;;ooxxxxxxx%%%%%%%%%%%%x%o;.    .,..:;xxxxooo;;::,..                                 </tspan>
+<tspan x="29.96" y="394.9" class="t" style="animation-delay:2.53s">               :xxoo;;::;;;;;oxxo:,,::,    ,;o%%x%%%%##%%###%xx%xo;::::;;:,,:ox%%xo;;;;;;:...                                 </tspan>
+<tspan x="29.96" y="399.5" class="t" style="animation-delay:2.57s">                ;%xooxo:::;::;oxxo:,,:;::..,:;;ooxxx%%%%xx%%xoxx%xxxx%%xo;::;oxxxo;;;;;::,...                                 </tspan>
+<tspan x="29.96" y="404.2" class="t" style="animation-delay:2.6s">                 :xxxo:::::::;ooxxo;,:;ooo;;;;oooooooooooooxxx%%%%%%%%%xxo;;;xxxoo;o;;:::,..                                  </tspan>
+<tspan x="29.96" y="408.9" class="t" style="animation-delay:2.63s">                  .:;,.,::::::;oooxo::;oxxxxxooxxxxxxxxxxxxxx%%%%%%%%x%xxooooxxxooo;;:::,..                                   </tspan>
+<tspan x="29.96" y="413.6" class="t" style="animation-delay:2.67s">                    .:,,:::::;;ooxxx;;;oxxxxxxxxx%%%%%%xxx%%%%%xxxoxox%xoooxxxxxoo;;::,,...                                   </tspan>
+<tspan x="29.96" y="418.3" class="t" style="animation-delay:2.7s">                      ,:,::::;ooxxxxx;;ooxxo;;;;;:::::::,,,,::::;;ooox%xooxooxxxooo;:,,,:..                                   </tspan>
+<tspan x="29.96" y="423.0" class="t" style="animation-delay:2.73s">                       .,,:::;;oxxxxo;ooooxoooo::,.         .,::;ooxx%%%xxxooxxxooo;;,,;o..                                   </tspan>
+<tspan x="29.96" y="427.7" class="t" style="animation-delay:2.77s">                         .::,:;;ooxxxooooooxxoo;:,...,.....,,;ooo%x%####%xxooxxo;oo;:,:oo,.                                   </tspan>
+<tspan x="29.96" y="432.4" class="t" style="animation-delay:2.8s">                          .:;::;ooooxo;oox%%%%xxooo;;;::::;;oo%##########xxox;oo;;;,,;xxx,                                    </tspan>
+<tspan x="29.96" y="437.1" class="t" style="animation-delay:2.83s">                            ;x::;xo;o;;;o%##########%o;ooxo;ox%###%###%%xoo;;;:;;:,,oxxx%: .                                  </tspan>
+<tspan x="29.96" y="441.8" class="t" style="animation-delay:2.87s">                            ,%x;::;;;;;:;o%########%%xooxo;;ooxxoxxx%x;xo;;;:::,..:oxxx%%;                                    </tspan>
+<tspan x="29.96" y="446.5" class="t" style="animation-delay:2.9s">                             o%xo:,:::,:::;ooxoxxxxoxxxo;;o;;;;;;;;;;;,;:;;:,,...:oxxxx%%o                                    </tspan>
+<tspan x="29.96" y="451.2" class="t" style="animation-delay:2.93s">                             :%x%x;,,:,,,,,,:::;;;;oo;;;::;::::;;:;,,,,,::,....,:oxxxx%%%x.                                   </tspan>
+<tspan x="29.96" y="455.8" class="t" style="animation-delay:2.97s">                             ,%xxxxo:,,,,,,,.,:::::;;:::,,,,,,::,,,,. ,,,.....,:;oxxxx%%%x,                                   </tspan>
+<tspan x="29.96" y="460.5" class="t" style="animation-delay:3.0s">                             .x%xxxxo:,,,,,..,,.,,,:,,.,..,..,,......... ....,:;oxxx%%%%%%:                                   </tspan>
+<tspan x="29.96" y="465.2" class="t" style="animation-delay:3.03s">                              o%xxxxoo:,.,....   ..............  ..   ...,,,:;;oxxxx%%%%%%o                                   </tspan>
+<tspan x="29.96" y="469.9" class="t" style="animation-delay:3.07s">                              ;%xxxxxo;::,.......  .........,,::,......,,,;;;;oxxxx%%%%%%%x.                                  </tspan>
+<tspan x="29.96" y="474.6" class="t" style="animation-delay:3.1s">                              :xxxxxxoo;;;:,,...........,,,,::;;;:,,,,,::;;oooxxxxx%%%%%%%%: .                                </tspan>
+<tspan x="29.96" y="479.3" class="t" style="animation-delay:3.13s">                              ,xxxooxxxoo;;;:,,,.....,,,,,,,,::::::::::;;;oxxxxx%%%%%%%%%%%o,.....                            </tspan>
+<tspan x="29.96" y="484.0" class="t" style="animation-delay:3.17s">                              .oxxoooooooooo;::,,,,,::,,,:::;;;;;o;;;;;o;oxxx%%%%%%%%%%%%%%xo;.  ,,                           </tspan>
+<tspan x="29.96" y="488.7" class="t" style="animation-delay:3.2s">                               oxxooooooooooo;::::,,,::,:::;oooo;oo;;oooxxx%%%%%%%xx%%%%%%%%xoo:  ::,,......                  </tspan>
+<tspan x="29.96" y="493.4" class="t" style="animation-delay:3.23s">                               oxxxooooooooooo;;;;;;;::;;;ooxxxxxoooooxx%%%%%%%x%xx%%%%%%%%%xxo%; ,;;;;;oo;;;::,...           </tspan>
+<tspan x="29.96" y="498.1" class="t" style="animation-delay:3.27s">                             ..;xxxooooooooooooo;;;;;;;oooooxxxx%xxxxxxx%%%%%%%%%%%%%%%%%%%%%%oo%..;:::;:;;;ooo;;;;:::::::.   </tspan>
+<tspan x="29.96" y="502.8" class="t" style="animation-delay:3.3s">                           .   oxxxooooooooooooo;oooooooooxxxxxxxxxxxxx%%%%%%%%%%%%%%%%%%%%%%%xx%,,;::::::;:;;oo;;;;x%%###%xxo</tspan>
+<tspan x="29.96" y="507.4" class="t" style="animation-delay:3.33s">                         ..   :xxxxooooooooooooooooxxxxxxx%%%%xxxxxxxx%%%%%%%%%%%%%%%%%%%%%%%%xx%,,;:,::,:::;;oooooxx%%%%#####</tspan>
+<tspan x="29.96" y="512.1" class="t" style="animation-delay:3.37s">                        ,:   .oooxxoooooooooooooooooxxxxxx%x%%%%xxxxxx%%%%%%%%%%%%%%%%%%%%%%%%o%o.::::,,:;:::;ooxxx%%%%%%%%%%%</tspan>
+<tspan x="29.96" y="516.8" class="t" style="animation-delay:3.4s">                      ,;o:  .,oooooxxooooxxxxxxxxxxxxxxx%%%%%%%%%xxxx%%%%%%%%%%%%%%%%%%%%%%%%oo%,:::;o;;oxooooooox%%%%%%%%####</tspan>
+<tspan x="29.96" y="521.5" class="t" style="animation-delay:3.43s">                  .,:o;;o:  .,;o;oooxooooxooxxxxxxxxxxxx%%%%%%%%%%%xxxxx%%%%%%%%%%xxxx%%%%%xx:x;,:::;xxx%xxxxxxxxx%%%%%#######</tspan>
+<tspan x="29.96" y="526.2" class="t" style="animation-delay:3.47s">               .,:;o;;::;;. .,:o:;oooooooxxxxxxxxxxxxxxxxx%%%%%%%%xxxxxxx%%%%%%xxxxxxxx%%%xx;:%,,,:,:x%%%%%xxxx%%%xx%%#####%%%</tspan>
+<tspan x="29.96" y="530.9" class="t" style="animation-delay:3.5s">            ,,;oo;;:;;;::::. ,:;o,;oooxxxxxxxxxxxxxxxxxxxx%%%%%%xxxxxxxx%xxx%xxxxxxxxxxxxxxo.;x,:,:::x%%%%%%%xxx%%xxx%%%%%%%%%</tspan>
+<tspan x="29.96" y="535.6" class="t" style="animation-delay:3.53s">         .:;ox%%%xxoo;;,:,::..,,o::;oooxoooxxxxxxxx%xx%%%%%x%%%%x%%%xx%%%%xxxxxxxooooooooxx:.oo,,,:::%#%%%%%%%xx%%xx%%%%%xxxxx</tspan>
+<tspan x="29.96" y="540.3" class="t" style="animation-delay:3.57s">      .:ox%xx%%%%%%%xo::,,,::,..:o,:;;oooooooooxxxx%%%%%%%%%%%%%%xxxxxxxxxxxxxxoo;;;;oooxo;:,x:,,.;o;%%%%%%%%%%%%x%%%%%%xxxxxx</tspan>
+<tspan x="29.96" y="545.0" class="t" style="animation-delay:3.6s">   .:ox%%xx%%%%%%%%%#x:;:,,,,:,, ;;.:::;;;;;;;;;ooxxxxxxxxx%%xxxxxxxxooooxxxxxo;;;;;;ooo;,,,;x.,,,ox;x%%%%%%%%%%%xxxx%%xxxxxox</tspan>
+</text>
+
+
+
+
+<!-- fastfetch output -->
+<text x="390" y="150" fill="#c9d1d9">
+<tspan x="390" y="150" class="t" style="animation-delay:0.90s">lekh@github -------------------------</tspan>
+<tspan x="390" y="170" class="cc t" style="animation-delay:1.06s">. </tspan><tspan class="key t" style="animation-delay:1.06s">Focus</tspan><tspan class="t" style="animation-delay:1.06s">:</tspan><tspan class="cc t" style="animation-delay:1.06s"> ............ </tspan><tspan class="value t" style="animation-delay:1.06s">Full Stack + AI</tspan>
+<tspan x="390" y="190" class="cc t" style="animation-delay:1.22s">. </tspan><tspan class="key t" style="animation-delay:1.22s">Coding for</tspan><tspan class="t" style="animation-delay:1.22s">:</tspan><tspan id="age_data_dots" class="cc t" style="animation-delay:1.22s"> ........... </tspan><tspan id="age_data" class="value t" style="animation-delay:1.22s">0 years, 0 months, 0 days</tspan>
+<tspan x="390" y="210" class="cc t" style="animation-delay:1.38s">. </tspan><tspan class="key t" style="animation-delay:1.38s">College</tspan><tspan class="t" style="animation-delay:1.38s">:</tspan><tspan class="cc t" style="animation-delay:1.38s"> ................ </tspan><tspan class="value t" style="animation-delay:1.38s">SPIT, Mumbai</tspan>
+<tspan x="390" y="230" class="cc t" style="animation-delay:1.54s">. </tspan><tspan class="key t" style="animation-delay:1.54s">Tools &amp; Languages</tspan><tspan class="t" style="animation-delay:1.54s">: </tspan><tspan class="value t" style="animation-delay:1.54s">TypeScript, Python, Java, SQL</tspan>
+<tspan x="390" y="250" class="cc t" style="animation-delay:1.70s">. </tspan><tspan class="value t" style="animation-delay:1.70s">                  React, Next.js, Node.js, Docker</tspan>
+<tspan x="390" y="270" class="cc t" style="animation-delay:1.86s">. </tspan><tspan class="key t" style="animation-delay:1.86s">Experience</tspan><tspan class="t" style="animation-delay:1.86s">:</tspan><tspan class="value t" style="animation-delay:1.86s"> Cactus Life Sciences, SDE Intern (Jun - Aug 26)</tspan>
+<tspan x="390" y="290" class="cc t" style="animation-delay:2.02s">. </tspan><tspan class="value t" style="animation-delay:2.02s">            SPIT, HPC Systems Intern (Dec 25 - Feb 26)</tspan>
+<tspan x="390" y="310" class="cc t" style="animation-delay:2.18s">. </tspan><tspan class="value t" style="animation-delay:2.18s">            CSI SPIT, Head of Events (Aug 25 - May 26)</tspan>
+<tspan x="390" y="330" class="cc t" style="animation-delay:2.34s">. </tspan><tspan class="key t" style="animation-delay:2.34s">Hackathons</tspan><tspan class="t" style="animation-delay:2.34s">:</tspan><tspan class="value t" style="animation-delay:2.34s"> 1st Place, La Casa De Code (National)</tspan>
+<tspan x="390" y="370" class="t" style="animation-delay:2.50s">- Contact ---------------------------</tspan>
+<tspan x="390" y="390" class="cc t" style="animation-delay:2.66s">. </tspan><tspan class="key t" style="animation-delay:2.66s">Email</tspan><tspan class="t" style="animation-delay:2.66s">:</tspan><tspan class="cc t" style="animation-delay:2.66s"> ..................... </tspan><tspan class="value t" style="animation-delay:2.66s">lekh.nayak23@spit.ac.in</tspan>
+<tspan x="390" y="410" class="cc t" style="animation-delay:2.82s">. </tspan><tspan class="key t" style="animation-delay:2.82s">LinkedIn</tspan><tspan class="t" style="animation-delay:2.82s">:</tspan><tspan class="cc t" style="animation-delay:2.82s"> ............................... </tspan><tspan class="value t" style="animation-delay:2.82s">lekh-nayak</tspan>
+<tspan x="390" y="430" class="cc t" style="animation-delay:2.98s">. </tspan><tspan class="key t" style="animation-delay:2.98s">Location</tspan><tspan class="t" style="animation-delay:2.98s">:</tspan><tspan class="cc t" style="animation-delay:2.98s"> .......................... </tspan><tspan class="value t" style="animation-delay:2.98s">Mumbai, India</tspan>
+<tspan x="390" y="450" class="cc t" style="animation-delay:3.06s">. </tspan><tspan class="key t" style="animation-delay:3.06s">Portfolio</tspan><tspan class="t" style="animation-delay:3.06s">:</tspan><tspan class="cc t" style="animation-delay:3.06s"> ................... </tspan><tspan class="value t" style="animation-delay:3.06s">portfolio.lekh.online</tspan>
+<tspan x="390" y="490" class="t" style="animation-delay:3.14s">- GitHub Stats ----------------------</tspan>
+<tspan x="390" y="510" class="cc t" style="animation-delay:3.30s">. </tspan><tspan class="key t" style="animation-delay:3.30s">Repos</tspan><tspan class="t" style="animation-delay:3.30s">:</tspan><tspan id="repo_data_dots" class="cc t" style="animation-delay:3.30s"> </tspan><tspan id="repo_data" class="value t" style="animation-delay:3.30s">0</tspan><tspan class="t" style="animation-delay:3.30s"> {</tspan><tspan class="key t" style="animation-delay:3.30s">Contributed</tspan><tspan class="t" style="animation-delay:3.30s">: </tspan><tspan id="contrib_data" class="value t" style="animation-delay:3.30s">0</tspan><tspan class="t" style="animation-delay:3.30s">} | </tspan><tspan class="key t" style="animation-delay:3.30s">Stars</tspan><tspan class="t" style="animation-delay:3.30s">:</tspan><tspan id="star_data_dots" class="cc t" style="animation-delay:3.30s"> ...... </tspan><tspan id="star_data" class="value t" style="animation-delay:3.30s">0</tspan>
+<tspan x="390" y="530" class="cc t" style="animation-delay:3.46s">. </tspan><tspan class="key t" style="animation-delay:3.46s">Commits</tspan><tspan class="t" style="animation-delay:3.46s">:</tspan><tspan id="commit_data_dots" class="cc t" style="animation-delay:3.46s"> ....... </tspan><tspan id="commit_data" class="value t" style="animation-delay:3.46s">0</tspan><tspan class="t" style="animation-delay:3.46s"> | </tspan><tspan class="key t" style="animation-delay:3.46s">Followers</tspan><tspan class="t" style="animation-delay:3.46s">:</tspan><tspan id="follower_data_dots" class="cc t" style="animation-delay:3.46s"> ....... </tspan><tspan id="follower_data" class="value t" style="animation-delay:3.46s">0</tspan>
+<tspan x="390" y="550" class="cc t" style="animation-delay:3.62s">. </tspan><tspan class="key t" style="animation-delay:3.62s">Lines of Code</tspan><tspan class="t" style="animation-delay:3.62s">:</tspan><tspan id="loc_data_dots" class="cc t" style="animation-delay:3.62s"> ..... </tspan><tspan id="loc_data" class="value t" style="animation-delay:3.62s">0</tspan><tspan class="t" style="animation-delay:3.62s"> ( </tspan><tspan id="loc_add" class="addColor t" style="animation-delay:3.62s">0</tspan><tspan class="addColor t" style="animation-delay:3.62s">++</tspan><tspan class="t" style="animation-delay:3.62s">, </tspan><tspan id="loc_del_dots" class="t" style="animation-delay:3.62s"/><tspan id="loc_del" class="delColor t" style="animation-delay:3.62s">0</tspan><tspan class="delColor t" style="animation-delay:3.62s">--</tspan><tspan class="t" style="animation-delay:3.62s"> )</tspan>
+</text>
+
+<!-- prompt + cursor -->
+<text x="390" y="570" fill="#c9d1d9"><tspan x="390" y="570" class="prompt t" style="animation-delay:3.78s">lekh@github</tspan><tspan class="sep t" style="animation-delay:3.78s">:</tspan><tspan class="value t" style="animation-delay:3.78s">~</tspan><tspan class="sep t" style="animation-delay:3.78s">$ </tspan><tspan class="t cursor" style="animation-delay:3.78s">█</tspan></text>
+</svg>

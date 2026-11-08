@@ -1,0 +1,92 @@
+
+
+
+
+
+
+
+
+
+
+                                                       .,,::,,,,,..,.......
+                                                   .:::;;;ooo;oooooooo;::::,,..,,.
+                                               .,;;;;;:;;;;;;;oxoooo;;;;;;:::..,;,.
+                                       ..,:;oooxxooo;;;;:::;ooooooo;;o;;;;;:;:,..:,..
+                                    .:oxxxxoooooxxxx%xooooooxooooooooxoooo;;;;::::,,,,...
+                                 ,,oxx%xo;;:;;oxxx%%xxxxxxxooo;;;;:::;;;:;;;::;;:::::,,,:.
+                               ,o%%%xxo;;;;;ooxxoxxooooooo;oo;;;:,:,,,,,,,:,,,,::::::::::,.
+                             ,o%%%%xxo;:::,,;oxo;;::;::::::;;;;;;;;::,,,,..,,,,,,,::,,:::::,,.
+                          .:;x%%%%xooo:::,,:;ooxxo;;;;;;;;;;;oxxo;::,,,.,,,.,,....,,,,,,,,,,::,,,
+                       ,oxx%%%%%%xxo;;;:::::;oooxxxoo;oxxo;oxoo::,,,,,,,,,::::::::,,,,..,,..,,:;o;;:,,
+                    .;%%#%%%%%%%%%%o;;;::,:;;o%xoxxxxoooooxxo;:,,,...,,:::;;;;;oooo;;;::,,,.,,,:;;xxxxo;,.
+                   ;x%%%%xx%%%%%%xo;;;::::,:;;o%%%xoooo;;:::,.... ..,::;;;ooooooooooxooo;;,.,::,:;,:oxx%%o:.
+                 .o%x%##%x%xx%x%xx;;;;,,,,,::;x%xxxoo;;:,.   . ...:;;;;;ooooooxxoxxxxxxxxoo;:,,::oo::;x%%%xx;
+                .o%%#%x%xxxxxx%xxo;;:,.     ..:;;;;::,,,,,:,,::;;;oxxxxx%xxx%%%%%%%%%xxxxxxxo:..,oxox;o%%##%%o,.
+                ;%%%xxxooxxxx%xo;:;;,.  .,,..........,:;;;::;;xxx%%%%%%#######%##%%%%%%xxxxxxo;,.;oox%;o%%%%xxo;,
+               :%%xxoo;;;;ooxxoxo;o,,.,.,:,.,::;:::;;;;;:;;oxxx%###########%###%%%%%%%%%%%%%%xx;.;;;x%xoxxxxooo;;:,
+              ,%%xxo;::::;;;oxxxoxo:;;;;oo:,::;;;;;oxoooxx%%%%############%#%%##%%%%%%%%%%%%%xxx::o;o%xo;ooooox;:;;:.
+              o%xo;;::::::;ooxxxxx%xoo;oo;::;::;oxxxxxxx%%%%%#################%%%%%%%%%%%%%%%%xxo;oo:;o;,,;:;;;;;::::.
+             ,xxo;;;:::,:;;ooox%xoxxoo;;:::;::ox%xxox%x%%%%###################%%%%%%%%%%%%%%%%xxo;;::.::,.,;::::;;::::.
+             ;xo;;;;::,,:::;;:ooxoo:,,::::;:;oxxoox%%%%%########################%%%%%%%%%%%%%%xxoo:,,..,,,.,:,:::,:::,:,
+            .ooo;;;:::,::,,::::;;:;:,,,:;o;;oooo%%%%%###########################%%%%%%%%%%%%xxxxx;::,. ,....,,,:,,::::::,
+            :oo;;;:::.:;,,:;::,;::::,,,,,:;oox%%%%##############################%##%%%%%%%xxxxxxoo;:,. .,,...,.,,,:::::::.
+            ;xo;;:::,:;,,:;;:,,,;,:x;;;:;xx%%%%%############################%%#%######%%%%xxxxxxo;;;,, .,,...,,,,::::;:::,
+           .oxo;;::,,;:,,,:::.,.,,;o;ooo%%%%%########################%%%%%%%%%%%%%%%%%%%%%%%%xxxo:::,, .,,,,,,,,,,:::;::::,
+           :xoxo;::,:,,,,:,,.,,,,::;oooxx%%######%%%%%%%%%%%%###%%%%%%xxxxxxxoooo;o;oooxxoxxxxxxo:,,.,..,,,,,,:::,,:::::::,
+           ;xoooo::,:,,,,,.,,.,.,:::ooooxx%%%%%%%%%x%%%xxxxx%%%%%xxxxxxo;;;:::,,,,,:,,,:;;;oox%xx;,..,,.,::::,::::,::,,:::,
+           ;xoooo:;::,,,,,,,.,,.,;;;ooo;;:;ooooo;;;o;;;;;ooxxxxxxxxxoo:,... ...,;x;::::,::::::;ooo:,..,.,::,::,:::,,,,,,::,
+           ;xoooo;:::,,,.,:,,,..,;oooo;,,::::::::::,. ....,:;ooooo;;:,,.. .,,::;ooo;oooooooo;;:.,,,,,,,.,:::::::,,,,,,,:;:
+           ;xoooo;::,,,:.;o,:...:ooxo;:::::::::::ox;:::,,,,,::,:;:,,:,..,;;ooo;;;;;oooxxxxxxxxxo,...,:,.,::,::::,,,:,.,::.
+           :xoooo;::,.,:.o%:,..,:;;;:;;ooxxxxxooooooo;;;::,,:,:.,.  . ,oooooo;:::,::;;ooxxxxxxxx;,.:::,,,,::,,,:,,,,..,,
+           .xx;;o;:;,,,,,,xo::,,,,,oxxxxxxxxxxxoooo;;oooo;:..:::;;;, .;;;ooo;:,,:,,,:;;;oooxxxxxo,:x,,,,,,::,,...,,..,,
+            ;xo;oo;;:,,.,,:ox;:;,:xxxx%%%xxooooo;;;:::;oo;;: ,ooooo; ,;;;;;:::;;,,,:,oo::;;ooxx%x,;%: ..,,,,,,,.,,,,,,.
+            .x%oooo;:,,.,, .xxox,;xxx%%%xxoo;;:::::;;;::;;;; .,:;;:,..;o;:::::::,,:::;;;;;;oox%%x.o%;.. .,.....,,,,,:,
+             ,%%oo;;;::,,,. x;,;.oxxx%%xxoo;oo:;;::;;;:;;;o; ,x####%: :xxo;;;:;;;;;;;;;;ooxx%%%#x.x%x:.  ..  .....,::
+              :%x;;;;:;;,,,.:. :,oxx%%%xxooooooo;;;;;;;;;ox: x######%,.x%%%xxoo;;;;;ooox%#######;:#%%;,,...  ..,,,,:.
+               :%o;;;;:;;:,,.. ,::x%%xxxxxxoooooooooooox%%x.;######%#x,:%%######%%#############%,%#%%x:,::::,,,:,,,.
+                :xo;;;;:;:,,.   ;:x%%%%%%%%xxxxxxxx%%##%xx:,%%########x,;%%%%##################:o###%x::;ooo;::;;,.
+                 :xo;:;;::,.... oo:#%#################%x%;.%#%#########%:,x%%%%%%%%%%%%%%%###%;x####%%;:::;;o;:;o,
+                  ,xxo;;::,.....o#:o##############%%%%%%;:%#%%###########x;xxx%%%%%%%%%%%%%xoo%######%o:;oxx%x;x;
+                   .o%x;::,,,...x#%:x########%%%%%%%%xo;o##################%x:;;ooxxxx%%%xx%%########%o::;xxxxoo.
+                     o#o;:::,:,,x###oox%###%%%%%%xxo;:;%##%#%%%%%%%%%%%######%;oooooxxxxx%%%%%%%%####%o:::;;;xo:
+                      xoo;;oo;::x#####%o%%xxxooooo;;;;%%%%xxxxxxx%%%%xoooooxxo;oooooooxxxxxx%%%%%%%%%xo:,,,,;xo,
+                      oox;;ooo;:x#####%%%%xxxxxxxooooo;oo;::::;ox%%%x;:,,,,,::;ooo;;;ooxxxxxx%%%%%%%%xo:::,;%o;.
+                      oxx;oooo::o%%%#%xxxxxxxxxo;;;;oo:,,,,,,,,:;ooo:,,....,,,::;;;;:;;ooxxx%%%%%xxxxo;:oxoxoo,
+                      :%x;ooo;::o%%%%xxxxxx%xxo;;;;;;:,,..      .,,,      ,,,,,,,,.,,,,:;oxxx%%xxxxxo;::oxxoo;
+                       o%ox;;:::;x%%xxxxxxxxxo:::,,.,:;::,,......,,,,,..,:;;;ooo::... ..,;xxx%%xxooo;;,:ox%%o.
+                       .xxoo:,:;;;xxxxxxxxxx;,...  ,;o;;;:;:;;;o;;;;o;;o;oooooxooo;;;,..,:oxxxxxoo;;;:,:%%%x,
+                        .xoo;:;;:;ooooxxxxxo....,,:ooooooooxxxxxxxxxxxxxxxxxxxo;:,,,:,...:oxxxoooo;;::,,;;:.
+                         :x;oxo;::;;;;oxxxx;.,.,;o;;;;ooxxxxxxx%%%%%%%%%%%%x%o;.    .,..:;xxxxooo;;::,..
+                          :xxoo;;::;;;;;oxxo:,,::,    ,;o%%x%%%%##%%###%xx%xo;::::;;:,,:ox%%xo;;;;;;:...
+                           ;%xooxo:::;::;oxxo:,,:;::..,:;;ooxxx%%%%xx%%xoxx%xxxx%%xo;::;oxxxo;;;;;::,...
+                            :xxxo:::::::;ooxxo;,:;ooo;;;;oooooooooooooxxx%%%%%%%%%xxo;;;xxxoo;o;;:::,..
+                             .:;,.,::::::;oooxo::;oxxxxxooxxxxxxxxxxxxxx%%%%%%%%x%xxooooxxxooo;;:::,..
+                               .:,,:::::;;ooxxx;;;oxxxxxxxxx%%%%%%xxx%%%%%xxxoxox%xoooxxxxxoo;;::,,...
+                                 ,:,::::;ooxxxxx;;ooxxo;;;;;:::::::,,,,::::;;ooox%xooxooxxxooo;:,,,:..
+                                  .,,:::;;oxxxxo;ooooxoooo::,.         .,::;ooxx%%%xxxooxxxooo;;,,;o..
+                                    .::,:;;ooxxxooooooxxoo;:,...,.....,,;ooo%x%####%xxooxxo;oo;:,:oo,.
+                                     .:;::;ooooxo;oox%%%%xxooo;;;::::;;oo%##########xxox;oo;;;,,;xxx,
+                                       ;x::;xo;o;;;o%##########%o;ooxo;ox%###%###%%xoo;;;:;;:,,oxxx%: .
+                                       ,%x;::;;;;;:;o%########%%xooxo;;ooxxoxxx%x;xo;;;:::,..:oxxx%%;
+                                        o%xo:,:::,:::;ooxoxxxxoxxxo;;o;;;;;;;;;;;,;:;;:,,...:oxxxx%%o
+                                        :%x%x;,,:,,,,,,:::;;;;oo;;;::;::::;;:;,,,,,::,....,:oxxxx%%%x.
+                                        ,%xxxxo:,,,,,,,.,:::::;;:::,,,,,,::,,,,. ,,,.....,:;oxxxx%%%x,
+                                        .x%xxxxo:,,,,,..,,.,,,:,,.,..,..,,......... ....,:;oxxx%%%%%%:
+                                         o%xxxxoo:,.,....   ..............  ..   ...,,,:;;oxxxx%%%%%%o
+                                         ;%xxxxxo;::,.......  .........,,::,......,,,;;;;oxxxx%%%%%%%x.
+                                         :xxxxxxoo;;;:,,...........,,,,::;;;:,,,,,::;;oooxxxxx%%%%%%%%: .
+                                         ,xxxooxxxoo;;;:,,,.....,,,,,,,,::::::::::;;;oxxxxx%%%%%%%%%%%o,.....
+                                         .oxxoooooooooo;::,,,,,::,,,:::;;;;;o;;;;;o;oxxx%%%%%%%%%%%%%%xo;.  ,,
+                                          oxxooooooooooo;::::,,,::,:::;oooo;oo;;oooxxx%%%%%%%xx%%%%%%%%xoo:  ::,,......
+                                          oxxxooooooooooo;;;;;;;::;;;ooxxxxxoooooxx%%%%%%%x%xx%%%%%%%%%xxo%; ,;;;;;oo;;;::,...
+                                        ..;xxxooooooooooooo;;;;;;;oooooxxxx%xxxxxxx%%%%%%%%%%%%%%%%%%%%%%oo%..;:::;:;;;ooo;;;;:::::::.
+                                      .   oxxxooooooooooooo;oooooooooxxxxxxxxxxxxx%%%%%%%%%%%%%%%%%%%%%%%xx%,,;::::::;:;;oo;;;;x%%###%xxo
+                                    ..   :xxxxooooooooooooooooxxxxxxx%%%%xxxxxxxx%%%%%%%%%%%%%%%%%%%%%%%%xx%,,;:,::,:::;;oooooxx%%%%#####
+                                   ,:   .oooxxoooooooooooooooooxxxxxx%x%%%%xxxxxx%%%%%%%%%%%%%%%%%%%%%%%%o%o.::::,,:;:::;ooxxx%%%%%%%%%%%
+                                 ,;o:  .,oooooxxooooxxxxxxxxxxxxxxx%%%%%%%%%xxxx%%%%%%%%%%%%%%%%%%%%%%%%oo%,:::;o;;oxooooooox%%%%%%%%####
+                             .,:o;;o:  .,;o;oooxooooxooxxxxxxxxxxxx%%%%%%%%%%%xxxxx%%%%%%%%%%xxxx%%%%%xx:x;,:::;xxx%xxxxxxxxx%%%%%#######
+                          .,:;o;;::;;. .,:o:;oooooooxxxxxxxxxxxxxxxxx%%%%%%%%xxxxxxx%%%%%%xxxxxxxx%%%xx;:%,,,:,:x%%%%%xxxx%%%xx%%#####%%%
+                       ,,;oo;;:;;;::::. ,:;o,;oooxxxxxxxxxxxxxxxxxxxx%%%%%%xxxxxxxx%xxx%xxxxxxxxxxxxxxo.;x,:,:::x%%%%%%%xxx%%xxx%%%%%%%%%
+                    .:;ox%%%xxoo;;,:,::..,,o::;oooxoooxxxxxxxx%xx%%%%%x%%%%x%%%xx%%%%xxxxxxxooooooooxx:.oo,,,:::%#%%%%%%%xx%%xx%%%%%xxxxx
+                 .:ox%xx%%%%%%%xo::,,,::,..:o,:;;oooooooooxxxx%%%%%%%%%%%%%%xxxxxxxxxxxxxxoo;;;;oooxo;:,x:,,.;o;%%%%%%%%%%%%x%%%%%%xxxxxx
+              .:ox%%xx%%%%%%%%%#x:;:,,,,:,, ;;.:::;;;;;;;;;ooxxxxxxxxx%%xxxxxxxxooooxxxxxo;;;;;;ooo;,,,;x.,,,ox;x%%%%%%%%%%%xxxx%%xxxxxox

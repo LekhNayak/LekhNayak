@@ -1,0 +1,47 @@
+name: Update profile SVGs
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # once a day, midnight UTC
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '*.svg'
+      - 'README.md'
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create cache directory
+        run: mkdir -p cache
+
+      - name: Run today.py
+        run: python today.py
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME: LekhNayak
+          CODING_START: "2023-08-01"   # assumed: B.Tech start. Change to an earlier date if you coded before college (YYYY-MM-DD)
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile.svg cache/
+          git diff --cached --quiet && echo "No changes to commit" || git commit -m "Update GitHub stats"
+          git push
