@@ -1,5 +1,5 @@
 <a href="https://github.com/LekhNayak/LekhNayak">
-  <img alt="Lekh Nayak's GitHub Profile README" src="https://raw.githubusercontent.com/LekhNayak/LekhNayak/main/profile.svg?v=2">
+  <img alt="Lekh Nayak's GitHub Profile README" src="https://raw.githubusercontent.com/LekhNayak/LekhNayak/main/profile.svg?v=3">
 </a>
 
 <p align="center">

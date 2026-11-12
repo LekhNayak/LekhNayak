@@ -15,7 +15,7 @@ USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
 MAX_COMMIT_LOC = 10000 # commits changing more lines than this are left out of the LOC stats
 # First line of the cache file. Changing it (e.g. after changing MAX_COMMIT_LOC) forces a full LOC recount.
 CACHE_MARKER = 'LOC cache v2: commits over ' + str(MAX_COMMIT_LOC) + ' changed lines excluded\n'
-QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repo_count': 0, 'graph_stars': 0, 'graph_merged_prs': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
+QUERY_COUNT = {'user_getter': 0, 'token_check': 0,'follower_getter': 0, 'graph_repo_count': 0, 'graph_stars': 0, 'graph_merged_prs': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
 def daily_readme(start_date):
@@ -595,6 +595,32 @@ def follower_getter(username):
     return int(request.json()['data']['user']['followers']['totalCount'])
 
 
+def token_check():
+    """
+    Prints which account the ACCESS_TOKEN belongs to, when it expires, and how many
+    private repositories it can see, so token problems show up plainly in the Action log.
+    """
+    query_count('token_check')
+    query = '''
+    query ($login: String!) {
+        viewer {
+            login
+            repositories(first: 1, ownerAffiliations: OWNER, privacy: PRIVATE) { totalCount }
+        }
+        user(login: $login) {
+            repositories(first: 1, ownerAffiliations: OWNER, privacy: PRIVATE) { totalCount }
+        }
+    }'''
+    request = simple_request(token_check.__name__, query, {'login': USER_NAME})
+    data = request.json()['data']
+    print('Token check: belongs to', data['viewer']['login'],
+          '| expires', request.headers.get('github-authentication-token-expiration', 'never'),
+          '| private repos visible:', data['user']['repositories']['totalCount'],
+          '(as viewer:', str(data['viewer']['repositories']['totalCount']) + ')')
+    if data['viewer']['repositories']['totalCount'] == 0:
+        print('   -> This token sees no private repos. Give it "All repositories" access and save it as the ACCESS_TOKEN secret.')
+
+
 def query_count(funct_id):
     """
     Counts how many times the GitHub GraphQL API is called
@@ -644,6 +670,10 @@ if __name__ == '__main__':
         formatter('account data', user_time)
     except Exception as e:
         print('Could not fetch account data (continuing without it):', e)
+    try:
+        token_check()
+    except Exception as e:
+        print('Token check failed (continuing):', e)
 
     age_data = None
     age_time = 0
