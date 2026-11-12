@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="580px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="600px" font-size="16px">
 <style>
 @font-face {
 src: local('Consolas'), local('Consolas Bold');
@@ -24,7 +24,7 @@ text, tspan {white-space: pre;}
 @keyframes blink {0%, 49% {opacity: 1;} 50%, 100% {opacity: 0;}}
 }
 </style>
-<rect width="985px" height="580px" fill="#161b22" rx="15"/>
+<rect width="985px" height="600px" fill="#161b22" rx="15"/>
 
 <!-- terminal title bar -->
 <rect x="0" y="0" width="985" height="34" fill="#0d1117" rx="15"/>
@@ -149,9 +149,10 @@ text, tspan {white-space: pre;}
 <tspan x="390" y="490" class="t" style="animation-delay:3.14s">- GitHub Stats ----------------------</tspan>
 <tspan x="390" y="510" class="cc t" style="animation-delay:3.30s">. </tspan><tspan class="key t" style="animation-delay:3.30s">Repos</tspan><tspan class="t" style="animation-delay:3.30s">:</tspan><tspan id="repo_data_dots" class="cc t" style="animation-delay:3.30s"> </tspan><tspan id="repo_data" class="value t" style="animation-delay:3.30s">19</tspan><tspan class="t" style="animation-delay:3.30s"> {</tspan><tspan class="key t" style="animation-delay:3.30s">Contributed</tspan><tspan class="t" style="animation-delay:3.30s">: </tspan><tspan id="contrib_data" class="value t" style="animation-delay:3.30s">28</tspan><tspan class="t" style="animation-delay:3.30s">} | </tspan><tspan class="key t" style="animation-delay:3.30s">Stars</tspan><tspan class="t" style="animation-delay:3.30s">:</tspan><tspan id="star_data_dots" class="cc t" style="animation-delay:3.30s"> ...... </tspan><tspan id="star_data" class="value t" style="animation-delay:3.30s">0</tspan>
 <tspan x="390" y="530" class="cc t" style="animation-delay:3.46s">. </tspan><tspan class="key t" style="animation-delay:3.46s">Commits</tspan><tspan class="t" style="animation-delay:3.46s">:</tspan><tspan id="commit_data_dots" class="cc t" style="animation-delay:3.46s"> ......... </tspan><tspan id="commit_data" class="value t" style="animation-delay:3.46s">238</tspan><tspan class="t" style="animation-delay:3.46s"> | </tspan><tspan class="key t" style="animation-delay:3.46s">Followers</tspan><tspan class="t" style="animation-delay:3.46s">:</tspan><tspan id="follower_data_dots" class="cc t" style="animation-delay:3.46s"> ...... </tspan><tspan id="follower_data" class="value t" style="animation-delay:3.46s">15</tspan>
-<tspan x="390" y="550" class="cc t" style="animation-delay:3.62s">. </tspan><tspan class="key t" style="animation-delay:3.62s">Lines of Code</tspan><tspan class="t" style="animation-delay:3.62s">:</tspan><tspan id="loc_data_dots" class="cc t" style="animation-delay:3.62s"> ...... </tspan><tspan id="loc_data" class="value t" style="animation-delay:3.62s">81,914</tspan><tspan class="t" style="animation-delay:3.62s"> ( </tspan><tspan id="loc_add" class="addColor t" style="animation-delay:3.62s">106,931</tspan><tspan class="addColor t" style="animation-delay:3.62s">++</tspan><tspan class="t" style="animation-delay:3.62s">, </tspan><tspan id="loc_del_dots" class="t" style="animation-delay:3.62s"/><tspan id="loc_del" class="delColor t" style="animation-delay:3.62s">25,017</tspan><tspan class="delColor t" style="animation-delay:3.62s">--</tspan><tspan class="t" style="animation-delay:3.62s"> )</tspan>
+<tspan x="390" y="550" class="cc t" style="animation-delay:3.62s">. </tspan><tspan class="key t" style="animation-delay:3.62s">PRs Merged</tspan><tspan class="t" style="animation-delay:3.62s">:</tspan><tspan id="pr_data_dots" class="cc t" style="animation-delay:3.62s"> ........ </tspan><tspan id="pr_data" class="value t" style="animation-delay:3.62s">5</tspan>
+<tspan x="390" y="570" class="cc t" style="animation-delay:3.78s">. </tspan><tspan class="key t" style="animation-delay:3.78s">Lines of Code</tspan><tspan class="t" style="animation-delay:3.78s">:</tspan><tspan id="loc_data_dots" class="cc t" style="animation-delay:3.78s"> ...... </tspan><tspan id="loc_data" class="value t" style="animation-delay:3.78s">81,914</tspan><tspan class="t" style="animation-delay:3.78s"> ( </tspan><tspan id="loc_add" class="addColor t" style="animation-delay:3.78s">106,931</tspan><tspan class="addColor t" style="animation-delay:3.78s">++</tspan><tspan class="t" style="animation-delay:3.78s">, </tspan><tspan id="loc_del_dots" class="t" style="animation-delay:3.78s"/><tspan id="loc_del" class="delColor t" style="animation-delay:3.78s">25,017</tspan><tspan class="delColor t" style="animation-delay:3.78s">--</tspan><tspan class="t" style="animation-delay:3.78s"> )</tspan>
 </text>
 
 <!-- prompt + cursor -->
-<text x="390" y="570" fill="#c9d1d9"><tspan x="390" y="570" class="prompt t" style="animation-delay:3.78s">lekh@github</tspan><tspan class="sep t" style="animation-delay:3.78s">:</tspan><tspan class="value t" style="animation-delay:3.78s">~</tspan><tspan class="sep t" style="animation-delay:3.78s">$ </tspan><tspan class="t cursor" style="animation-delay:3.78s">█</tspan></text>
+<text x="390" y="590" fill="#c9d1d9"><tspan x="390" y="590" class="prompt t" style="animation-delay:3.94s">lekh@github</tspan><tspan class="sep t" style="animation-delay:3.94s">:</tspan><tspan class="value t" style="animation-delay:3.94s">~</tspan><tspan class="sep t" style="animation-delay:3.94s">$ </tspan><tspan class="t cursor" style="animation-delay:3.94s">█</tspan></text>
 </svg>

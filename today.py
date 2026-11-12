@@ -15,7 +15,7 @@ USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
 MAX_COMMIT_LOC = 10000 # commits changing more lines than this are left out of the LOC stats
 # First line of the cache file. Changing it (e.g. after changing MAX_COMMIT_LOC) forces a full LOC recount.
 CACHE_MARKER = 'LOC cache v2: commits over ' + str(MAX_COMMIT_LOC) + ' changed lines excluded\n'
-QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repo_count': 0, 'graph_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
+QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repo_count': 0, 'graph_stars': 0, 'graph_merged_prs': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
 def daily_readme(start_date):
@@ -238,6 +238,35 @@ def rest_repos_stars(username):
         if len(batch) < 100:
             return repos, stars
         page += 1
+
+
+def graph_merged_prs():
+    """
+    Uses GitHub's GraphQL v4 API to return how many pull requests I authored that were merged,
+    in any repository (mine or other people's).
+    """
+    query_count('graph_merged_prs')
+    query = '''
+    query ($login: String!) {
+        user(login: $login) {
+            pullRequests(first: 1, states: MERGED) {
+                totalCount
+            }
+        }
+    }'''
+    request = simple_request(graph_merged_prs.__name__, query, {'login': USER_NAME})
+    return int(request.json()['data']['user']['pullRequests']['totalCount'])
+
+
+def rest_merged_prs(username):
+    """
+    Fallback for when GraphQL fails: merged pull request count from the REST search API (public PRs only).
+    """
+    request = requests.get('https://api.github.com/search/issues',
+                           params={'q': 'author:' + username + ' type:pr is:merged', 'per_page': 1},
+                           headers=HEADERS, timeout=60)
+    request.raise_for_status()
+    return int(request.json()['total_count'])
 
 
 def cached_repo_count(comment_size):
@@ -467,9 +496,9 @@ def force_close_file(data, cache_comment):
     print('There was an error while writing to the cache file. The file,', filename, 'has had the partial data saved and closed.')
 
 
-def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
+def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data, pr_data=None):
     """
-    Parse SVG files and update elements with my age, commits, stars, repositories, and lines written
+    Parse SVG files and update elements with my age, commits, stars, repositories, merged PRs, and lines written
     Values that are None are left untouched (the SVG keeps its current text).
     """
     tree = etree.parse(filename)
@@ -480,6 +509,7 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     if repo_data is not None: justify_format(root, 'repo_data', repo_data, 4)
     if contrib_data is not None: justify_format(root, 'contrib_data', contrib_data)
     if follower_data is not None: justify_format(root, 'follower_data', follower_data, 8)
+    if pr_data is not None: justify_format(root, 'pr_data', pr_data, 9) # right-aligns under the Commits value
     if loc_data is not None:
         if loc_data[2] != '-': justify_format(root, 'loc_data', loc_data[2], 12)
         if loc_data[0] != '-': justify_format(root, 'loc_add', loc_data[0])
@@ -672,7 +702,17 @@ if __name__ == '__main__':
             print('Using LOC cache fallback: contributed =', contrib_data)
         except Exception as e:
             print('Cache fallback also failed (leaving contributed unchanged):', e)
-    print('   repos:', repo_data, '| contributed:', contrib_data, '| stars:', star_data)
+    pr_data = None
+    try:
+        pr_data = graph_merged_prs()
+    except Exception as e:
+        print('Could not fetch merged PRs from GraphQL:', e)
+        try:
+            pr_data = rest_merged_prs(USER_NAME)
+            print('Using REST search fallback (public PRs only): merged PRs =', pr_data)
+        except Exception as e:
+            print('REST fallback also failed (leaving merged PRs unchanged):', e)
+    print('   repos:', repo_data, '| contributed:', contrib_data, '| stars:', star_data, '| merged PRs:', pr_data)
     follower_data = None
     try:
         follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
@@ -683,7 +723,7 @@ if __name__ == '__main__':
         for index in range(3): total_loc[index] = '{:,}'.format(int(total_loc[index]))
 
     try:
-        svg_overwrite('profile.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc)
+        svg_overwrite('profile.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc, pr_data)
     except Exception as e:
         print('Could not write SVG files:', e)
         raise
