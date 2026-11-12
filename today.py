@@ -15,7 +15,7 @@ USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
 MAX_COMMIT_LOC = 10000 # commits changing more lines than this are left out of the LOC stats
 # First line of the cache file. Changing it (e.g. after changing MAX_COMMIT_LOC) forces a full LOC recount.
 CACHE_MARKER = 'LOC cache v2: commits over ' + str(MAX_COMMIT_LOC) + ' changed lines excluded\n'
-QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
+QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repo_count': 0, 'graph_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
 def daily_readme(start_date):
@@ -74,7 +74,7 @@ def graphql_request(query, variables, retries=6):
                 if body is None or 'errors' in body:
                     last_error = 'GraphQL errors in response body'
                     if body is not None and 'errors' in body:
-                        errs = [e.get('type', e.get('message', '?')) for e in body['errors']]
+                        errs = [str(e.get('type', '')) + ' ' + str(e.get('message', '?'))[:200] for e in body['errors']]
                         last_error += ': ' + str(errs[:2])
                         # Rate limit exhausted: sleep until the hourly reset,
                         # then retry without burning a retry attempt.
@@ -88,6 +88,11 @@ def graphql_request(query, variables, retries=6):
                                     continue
                                 except ValueError:
                                     pass
+                        # Any other GraphQL error (missing permission, restricted field, bad query)
+                        # comes back the same every time, so give up after one retry instead of
+                        # waiting through the full ~5 minute backoff.
+                        if attempt >= 2:
+                            break
                 else:
                     ok = True
             else:
@@ -115,7 +120,7 @@ def graphql_request(query, variables, retries=6):
                 pass
         print('GraphQL request failed (' + last_error + '); retrying in ' + str(wait) + 's (attempt ' + str(attempt) + '/' + str(retries) + ')')
         time.sleep(wait)
-    raise Exception('GraphQL request failed after ' + str(retries) + ' attempts (' + last_error + ')')
+    raise Exception('GraphQL request failed after ' + str(attempt) + ' attempts (' + last_error + ')')
 
 
 def _pace_requests(request):
@@ -165,25 +170,38 @@ def graph_commits(start_date, end_date):
     return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
 
 
-def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
+def graph_repo_count(owner_affiliation):
     """
-    Uses GitHub's GraphQL v4 API to return my total repository, star, or lines of code count.
+    Uses GitHub's GraphQL v4 API to return how many repositories I have for the given affiliations.
+    Asks for no per-repository fields, so it only needs basic read access.
     """
-    query_count('graph_repos_stars')
+    query_count('graph_repo_count')
+    query = '''
+    query ($owner_affiliation: [RepositoryAffiliation], $login: String!) {
+        user(login: $login) {
+            repositories(first: 1, ownerAffiliations: $owner_affiliation) {
+                totalCount
+            }
+        }
+    }'''
+    variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME}
+    request = simple_request(graph_repo_count.__name__, query, variables)
+    return int(request.json()['data']['user']['repositories']['totalCount'])
+
+
+def graph_stars(owner_affiliation):
+    """
+    Uses GitHub's GraphQL v4 API to return the total stars across my repositories, all pages.
+    Reads each repository's stargazerCount number. The old query read stargazers { totalCount },
+    which goes through the stargazer list; GitHub restricts that list for personal access tokens,
+    and the error took the repo counts down with it.
+    """
     query = '''
     query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
         user(login: $login) {
             repositories(first: 100, after: $cursor, ownerAffiliations: $owner_affiliation) {
-                totalCount
-                edges {
-                    node {
-                        ... on Repository {
-                            nameWithOwner
-                            stargazers {
-                                totalCount
-                            }
-                        }
-                    }
+                nodes {
+                    stargazerCount
                 }
                 pageInfo {
                     endCursor
@@ -192,13 +210,44 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
             }
         }
     }'''
-    variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
-    request = simple_request(graph_repos_stars.__name__, query, variables)
-    if request.status_code == 200:
-        if count_type == 'repos':
-            return request.json()['data']['user']['repositories']['totalCount']
-        elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+    total, cursor = 0, None
+    while True:
+        query_count('graph_stars')
+        variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
+        repos = simple_request(graph_stars.__name__, query, variables).json()['data']['user']['repositories']
+        total += sum(node['stargazerCount'] for node in repos['nodes'] if node)
+        if not repos['pageInfo']['hasNextPage']:
+            return total
+        cursor = repos['pageInfo']['endCursor']
+
+
+def rest_repos_stars(username):
+    """
+    Fallback for when GraphQL fails: repository and star counts from the REST API.
+    Only sees public repositories, so it is used only when the GraphQL queries fail.
+    """
+    repos, stars, page = 0, 0, 1
+    while True:
+        request = requests.get('https://api.github.com/users/' + username + '/repos',
+                               params={'type': 'owner', 'per_page': 100, 'page': page},
+                               headers=HEADERS, timeout=60)
+        request.raise_for_status()
+        batch = request.json()
+        repos += len(batch)
+        stars += sum(repo.get('stargazers_count', 0) for repo in batch)
+        if len(batch) < 100:
+            return repos, stars
+        page += 1
+
+
+def cached_repo_count(comment_size):
+    """
+    Fallback for the Contributed count: the LOC cache has one line per repository
+    across the OWNER, COLLABORATOR and ORGANIZATION_MEMBER affiliations.
+    """
+    filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
+    with open(filename, 'r') as f:
+        return sum(1 for line in f.readlines()[comment_size:] if len(line.split()) >= 5)
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -418,15 +467,6 @@ def force_close_file(data, cache_comment):
     print('There was an error while writing to the cache file. The file,', filename, 'has had the partial data saved and closed.')
 
 
-def stars_counter(data):
-    """
-    Count total stars in repositories owned by me
-    """
-    total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
-    return total_stars
-
-
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
     """
     Parse SVG files and update elements with my age, commits, stars, repositories, and lines written
@@ -436,7 +476,7 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     root = tree.getroot()
     if age_data is not None: justify_format(root, 'age_data', age_data, 37)
     if commit_data is not None: justify_format(root, 'commit_data', commit_data, 12)
-    if star_data is not None: justify_format(root, 'star_data', star_data, 8)
+    if star_data is not None: justify_format(root, 'star_data', star_data, 7)
     if repo_data is not None: justify_format(root, 'repo_data', repo_data, 4)
     if contrib_data is not None: justify_format(root, 'contrib_data', contrib_data)
     if follower_data is not None: justify_format(root, 'follower_data', follower_data, 8)
@@ -604,21 +644,35 @@ if __name__ == '__main__':
         print('Could not count commits (continuing without it):', e)
     formatter('commits', commit_time)
 
-    star_data = None
-    try:
-        star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
-    except Exception as e:
-        print('Could not fetch stars (continuing without it):', e)
     repo_data = None
     try:
-        repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+        repo_data = graph_repo_count(['OWNER'])
     except Exception as e:
-        print('Could not fetch repos (continuing without it):', e)
+        print('Could not fetch repo count from GraphQL:', e)
+    star_data = None
+    try:
+        star_data = graph_stars(['OWNER'])
+    except Exception as e:
+        print('Could not fetch stars from GraphQL:', e)
+    if repo_data is None or star_data is None:
+        try:
+            rest_repos, rest_stars = rest_repos_stars(USER_NAME)
+            print('Using REST API fallback (public repos only): repos =', rest_repos, ', stars =', rest_stars)
+            if repo_data is None: repo_data = rest_repos
+            if star_data is None: star_data = rest_stars
+        except Exception as e:
+            print('REST fallback also failed (leaving repos/stars unchanged):', e)
     contrib_data = None
     try:
-        contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+        contrib_data = graph_repo_count(['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     except Exception as e:
-        print('Could not fetch contributions (continuing without it):', e)
+        print('Could not fetch contributed repo count from GraphQL:', e)
+        try:
+            contrib_data = cached_repo_count(7)
+            print('Using LOC cache fallback: contributed =', contrib_data)
+        except Exception as e:
+            print('Cache fallback also failed (leaving contributed unchanged):', e)
+    print('   repos:', repo_data, '| contributed:', contrib_data, '| stars:', star_data)
     follower_data = None
     try:
         follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
